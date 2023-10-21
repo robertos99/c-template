@@ -1,17 +1,19 @@
-# C Template
+# C Project Template
 
-A basic C project template with depecancy management via Cmake, tests, etc..
-Just for forking new C Projects.
+A basic C project template with dependency management via CMake, Unity for testing, and a well-defined project structure. Designed as a foundation for new C projects.
 
 ## Table of Contents
 
-- [C Template](#c-template)
+- [C Project Template](#c-project-template)
 - [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
+- [Contribution Guidelines](#contribution-guidelines)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
@@ -21,14 +23,12 @@ These instructions will help you set up the project on your local machine for de
 
 Here's what you'll need to run the project:
 
-- **GCC**: Prefered compiler. The one used in CMake scripts.
-  - Installation link or command.
+- **GCC**: Preferred compiler.
+  - Installation (based on your OS, e.g., sudo apt install gcc for Debian-based distros).
 - **CMake**: Primary build tool.
    ```bash
    sudo apt-get update 
    sudo apt-get install cmake
-- **OpenCL**: Required for GPU-accelerated tasks.
-  - Ensure you have an OpenCL SDK installed for your platform. [Installation Guide](link_to_guide).
 
 ### Installation
 
@@ -40,7 +40,8 @@ Here's what you'll need to run the project:
     ```bash
    cd projectname
 
-3. **Build the Project**
+3. **Build the Project** (this will generate all the folders and download Unity dependancies)
+
     ```bash
     ./build.sh build
 
