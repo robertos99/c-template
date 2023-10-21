@@ -57,6 +57,7 @@ case $1 in
         ;;
 
     buildAndTest)
+        mkdir -p $BUILD_DIR
         cd $BUILD_DIR
         cmake ..
         make
