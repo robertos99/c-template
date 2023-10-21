@@ -64,3 +64,19 @@ or build the entire project and run the tests:
 
     ./build.sh buildAndTest
 
+### Project Structure
+The directory structure of this project is as follows:
+
+```
+├── CMakeLists.txt
+├── README.md
+├── bin (generated, holds final binaries)
+├── build (generated, holds relevant files for builds)
+├── build.sh (centralized workflows)
+├── src
+│   ├── helloworld.c (example file for lib)
+│   ├── helloworld.h
+│   └── main.c (main)
+├── tests
+│   └── test_helloworld.c (example test for lib)
+└── third_party (tools, etc.)
