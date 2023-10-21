@@ -35,11 +35,11 @@ Here's what you'll need to run the project:
 
 1. **Clone the Repository**
     ```bash
-   git clone https://github.com/yourusername/projectname.git
+   git clone https://github.com/robertos99/c-template.git
 
 2. **Navigate to the Project Directory**
     ```bash
-   cd projectname
+   cd c-template
 
 3. **Build the Project** (this will generate all the folders and download Unity dependancies)
 
