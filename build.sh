@@ -13,6 +13,7 @@ function display_help() {
     echo "  run      Run the compiled binary"
     echo "  clean    Remove the build directory"
     echo "  all      Build and then run the project"
+    echo "  test     Run tests"
     echo "  help     Display this help message"
 }
 
@@ -47,6 +48,11 @@ case $1 in
         make
         cd ..
         ./$BIN_DIR/$EXECUTABLE_NAME
+        ;;
+
+    test)
+        cd $BUILD_DIR
+        ctest --verbose
         ;;
 
     help|*)
