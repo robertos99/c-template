@@ -2,11 +2,9 @@
 # Ignore everything in the directory
 # But don't ignore .gitkeep
 bin/*
-!bin/.gitkeep
 build/*
-!build/.gitkeep
-third_pary/*
-!third_pary/.gitkeep
+third_party/*
+!third_party/.gitkeep
 
 
 ### VS Code
