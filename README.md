@@ -11,6 +11,7 @@ A basic C project template with dependency management via CMake, Unity for testi
   - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
+- [Project Structure](#project-structure)
 - [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
