@@ -1,3 +1,11 @@
+### project customs
+# Ignore everything in the directory
+bin/*
+build/*
+# But don't ignore .gitkeep
+!bin/.gitkeep
+!build/.gitkeep
+
 ##### Windows
 # Windows thumbnail cache files
 Thumbs.db
