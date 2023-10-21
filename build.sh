@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Script to build and run the C project using CMake
+EXECUTABLE_NAME="helloworld"
+BUILD_DIR="build"
+BIN_DIR="bin"
 
 # Function to display help/usage
 function display_help() {
@@ -23,27 +26,27 @@ fi
 # Handle the provided argument
 case $1 in
     build)
-        mkdir -p build
-        cd build
+        mkdir -p $BUILD_DIR
+        cd $BUILD_DIR
         cmake ..
         make
         ;;
 
     run)
-        ./bin/my_c_app
+        ./$BIN_DIR/$EXECUTABLE_NAME
         ;;
 
     clean)
-        rm -rf build/
+        rm -rf $BUILD_DIR/
         ;;
 
     all)
-        mkdir -p build
-        cd build
+        mkdir -p $BUILD_DIR
+        cd $BUILD_DIR
         cmake ..
         make
         cd ..
-        ./bin/my_c_app
+        ./$BIN_DIR/$EXECUTABLE_NAME
         ;;
 
     help|*)
