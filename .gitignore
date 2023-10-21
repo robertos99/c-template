@@ -1,3 +1,4 @@
+### Project 
 # Ignore everything in the directory
 # But don't ignore .gitkeep
 bin/*
@@ -6,6 +7,22 @@ build/*
 !build/.gitkeep
 third_pary/*
 !third_pary/.gitkeep
+
+
+### VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
 
 # Prerequisites
 *.d
